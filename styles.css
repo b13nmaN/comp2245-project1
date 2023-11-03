@@ -13,14 +13,23 @@ body {
     flex-direction: row;
 }
 
+
+/* List styling  */
 ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-ul > li {
+ul > li > a {
     list-style: none;
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+ul > li > a:hover {
+    color: #5A67D8;
 }
 
 a {
@@ -29,6 +38,12 @@ a {
     color: #000;
 }
 
+/* Header styling */
+header {
+    background-color: white;
+    font-size: 18px;
+    color: #000; /* Set your desired color for header text */
+}
 
 /* Image styling */
 .overview-hero-image img,
@@ -156,6 +171,11 @@ a {
     padding: 40px 0;
 }
 
+.stories a {
+    margin: 0;
+    color: #5A67D8;
+    font-weight: 700;
+}
 .stories .container {
     display: flex;
     flex-direction: column;
