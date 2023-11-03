@@ -13,7 +13,18 @@ body {
     flex-direction: row;
 }
 
+/* Navigation Styling */
 
+.container nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 18px;
+}
 /* List styling  */
 ul {
     display: flex;
@@ -22,12 +33,15 @@ ul {
 }
 
 ul > li > a {
-    list-style: none;
     color: #6b7280;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for link color */
+    transition: color 0.3s; 
+    font-weight: 600;
 }
 
+ul > li {
+    list-style: none;
+}
 ul > li > a:hover {
     color: #5A67D8;
 }
@@ -39,14 +53,17 @@ a {
 }
 
 /* Header styling */
-header {
+header .container{
+    display: flex;
     background-color: white;
     font-size: 18px;
-    color: #000; /* Set your desired color for header text */
+    color: #000; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Image styling */
-.overview-hero-image img,
+
 .card img{
     max-width: 100%;
     max-height: 100%;
@@ -59,15 +76,20 @@ header {
     object-fit: cover;
 }
 
+.overview-hero-image img{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
 
 /* Overview Hero styling */
 .overview-hero {
-    background-color: #f5f5f5;
+    background-color: #E2E8F0;
     padding: 40px 40px;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 
@@ -97,20 +119,22 @@ header {
 }
 
 .learn-about h2 {
-    font-size: 28px;
+    color:#48BB78;
+    font-size: 24px;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    gap: 20px;
 }
 
 .card {
     flex: 1;
     padding: 20px;
     background-color: #fff;
-    margin: 10px;
+    margin: 0px;
     border: 1px solid #E2E8F0;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -129,23 +153,26 @@ header {
 
 /* Testing section styling */
 .testing {
-    background-color: #f5f5f5;
+    background-color: #4A5568;
     padding: 40px 0;
     text-align: left;
 }
 
 .testing .container {
+    background-color: #4A5568;
+    padding: 40px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.testing-description h2 {
+.testing h2 {
     font-size: 28px;
+    color: #fff;
 }
 
-.testing-description p {
+.testing p {
     font-size: 16px;
+    color: #fff;
 }
 
 .cta {
@@ -156,7 +183,7 @@ header {
 .cta .btn {
     text-align: center;
     width: 100%;
-    background-color: #4A5568;
+    background-color: #48bb78;
     padding: 20px;
     width: 150px;
     border-radius: 5px;
@@ -188,6 +215,8 @@ header {
 
 .stories article {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 30px 0;
 }
 
@@ -235,22 +264,42 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    height: auto;
 }
 
-.form-group input[type="email"] {
-    width: 100%;
+.form-group {
+    display: flex; 
+    align-items: center;  
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+    width: 60%;
+}
+
+.form-group input {
+    flex: 1; 
     padding: 10px;
     border: none;
     border-radius: 2px;
-    margin: 0px 0;
+    margin: 0;
+    height: 30px;
 }
 
-.newsletter .btn {
-    height: 100%;
-    width: 20%;
+.btn {
     padding: 10px;
     border: none;
-    border-radius: 5px;
-    margin: 10
+    border-radius: 2px;
+    background-color: #5A67D8;
+    color: #fff;
+    height: 50px;
+    width: 30%;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #4A5568;
+    color: #fff;
 }
