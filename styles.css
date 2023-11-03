@@ -147,15 +147,13 @@ a {
 }
 
 .stories .container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: auto;
-    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
 }
-
 .stories h2 {
     font-size: 28px;
     color: #5A67D8;
+    margin: 0px;
 }
 
 .stories article {
@@ -166,7 +164,7 @@ a {
 .stories article img {
     max-width: 100%;
     margin-right: 20px;
-    border-radius: 50%; /* Added to make images circular */
+    border-radius: 50%; 
 }
 
 .article-body h3 {
